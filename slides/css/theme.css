@@ -3,14 +3,7 @@
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
-@font-face {
-  font-family: 'League Gothic';
-  src: url("../../lib/font/league_gothic-webfont.eot");
-  src: url("../../lib/font/league_gothic-webfont.eot?#iefix") format("embedded-opentype"), url("../../lib/font/league_gothic-webfont.woff") format("woff"), url("../../lib/font/league_gothic-webfont.ttf") format("truetype"), url("../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,600,700);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -146,3 +139,8 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #13daec; }
+
+/* style */
+body {
+  font-family: 'Open Sans', serif !important;
+  background: #2E3133 !important; }
