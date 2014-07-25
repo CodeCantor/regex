@@ -1,0 +1,9 @@
+<h2>String#[]</h2>
+
+<pre><code class="ruby">msg = "Todo esto cuesta 13.37 euros"
+
+p msg[/\d+\.\d*/]
+msg[/\d+\.\d*/] = "14.95€"
+p msg
+p msg[/(?&lt;price>\d+)/, :price]
+</code></pre>

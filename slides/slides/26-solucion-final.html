@@ -1,0 +1,6 @@
+<h2>Solución IP</h2>
+
+<pre><code class="javascript">var num = "(?:[01]?\\d\\d?||2[0-4]\\d|25[0-5])";
+var ip = "^" + [num, num, num, num].join("\\.") + "$";
+var regex = new RegExp(ip);
+</code></pre>

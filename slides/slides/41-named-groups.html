@@ -1,0 +1,13 @@
+<h2>Named groups</h2>
+
+<pre><code class="ruby">msgs = [
+  "Enrique me debe 13 euros",
+  "Alejandro me debe 3 euros",
+  "Javier me debe 1 euro"
+]
+
+msgs.each do |msg|
+  /\A(?&lt;name>[A-z]+) me debe (?&lt;qty>\d+(\.\d+)?) euros?\z/ =~ msg
+  puts "#{name} => #{qty}"
+end
+</code></pre>

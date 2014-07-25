@@ -1,10 +1,4 @@
 
-# Introducción a las expresiones regulares
+# Expresiones Regulares
 
-From the terminal, pop in:
-
-  ```yo reveal:slide "Slide Title"```
-
-Available options:
-
- ```--markdown --attributes --notes```
+Una breve introducción.

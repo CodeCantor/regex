@@ -110,7 +110,16 @@
     document.dispatchEvent(event);
   };
 
+  var showPoints = function(regex, results) {
+    var pointsForSuccess = (results['true'] || []).length * 10;
+    var pointsForFail = (results['false'] || []).length * 10;
+    var pointsForChars = regex.toString().length - 2;
+    var result = pointsForSuccess - pointsForFail - pointsForChars;
+    console.log( "" + result + " points!");
+  };
+
   var showTestResults = function(regex, results) {
+    showPoints(regex,results);
     if('false' in results) {
       showTestResultsWithErrors(regex, results);
     } else {
@@ -237,10 +246,95 @@
     this.satisfy("adios", ["adios"]);
   });
 
-  example('Basic quantifier 1', function() {
+  example('Dot', function() {
     this.satisfy("hola", ["hola"]);
-    this.satisfy("hol", ["hol"]);
-    this.refute("holaa", ["holaa"]);
+    this.satisfy("cola", ["cola"]);
+    this.satisfy("mola", ["mola"]);
+    this.satisfy(" ola", [" ola"]);
+  });
+
+  example('Character class', function() {
+    var arr = ['a', 'e', 'i', 'o', 'u'];
+    _.each(arr, function(el) {
+      this.satisfy(el, [el]);
+      this.refute(el+el, [el+el]);
+    }, this);
+    arr = ['b', 'c', 'd', 'f', 'g'];
+    _.each(arr, function(el) {
+      this.refute(el, [el]);
+    }, this);
+  });
+
+  example("Capturing groups", function() {
+    this.satisfy("hola", ["hola", "la"]);
+    this.satisfy("cola", ["cola", "la"]);
+    this.satisfy("mola", ["mola", "la"]);
+  });
+
+  example("Non-capturing groups", function() {
+    this.satisfy("hola", ["hola", "la"]);
+    this.satisfy("cola", ["cola", "la"]);
+    this.satisfy("mola", ["mola", "la"]);
+    this.satisfy("ola", ["ola", "la"])
+  });
+
+  example('Lazy quantifier', function() {
+    this.satisfy("hola", ["hola"]);
+    this.satisfy("cola", ["cola"]);
+    this.satisfy("mola", ["mola"]);
+    this.satisfy("olala", ["ola"]);
+  });
+
+  example('IPs', function() {
+    var valid = [
+    '192.168.1.1',
+    '127.0.0.1',
+    '255.255.255.0',
+    '192.168.2.255'
+    ];
+    _.each(valid, function(el) {
+      this.satisfy(el, [el])
+    }, this);
+    var invalid = [
+    '256.392.192.192',
+    '392.256.192.192',
+    '192.192.256.392',
+    '192.192.392.256'
+    ];
+    _.each(invalid, function(el) {
+      this.refute(el, [el]);
+    }, this);
+  });
+
+  example("Email", function() {
+    var valid = [
+    'me@me.com',
+    'me@subdomain.domain.com',
+    'me+fancysubaccount@gmail.com',
+    'me.you@subdomain.domain.com'
+    ];
+    _.each(valid, function(el) {
+      this.satisfy(el, [el])
+    }, this);
+    var invalid = [
+    'me@me@me.com',
+    'something strange@example.com',
+    'something@is not right.com',
+    'something@is.not right'
+    ];
+    _.each(invalid, function(el) {
+      this.refute(el, [el]);
+    }, this);
+  });
+
+  example("Backreference", function() {
+    this.satisfy('010', ['010','0']);
+    this.satisfy('00100', ['00100','00']);
+    this.satisfy('0001000', ['0001000','000']);
+    this.satisfy('000010000', ['000010000','0000']);
+    this.refute('00010000', ['00010000','000']);
+    this.refute('001000', ['001000','00']);
+    this.refute('1', ['1','']);
   });
 
   window.e = window.example = example;
