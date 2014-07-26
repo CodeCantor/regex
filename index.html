@@ -1,13 +1,142 @@
-<!DOCTYPE html>
-<html>
-	<head>
+<!DOCTYPE html>                                        
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="lodash.js"></script>
 		<script src="tutorial.js"></script>
+		<!-- pwd by gruncho -->
+		<style> 
+		body {             
+		  font-family: 'Open Sans', serif;
+		  background: #2E3133;  
+		  color: white; 
+		  font-size: 62%;
+		}     
+		body, ul, h1, h2, h3, p {
+		  padding: 0;
+		  margin: 0;
+		}    
+		a {
+		  -webkit-transition: 0.2s ease-in;  
+    	-moz-transition: 0.2s ease-in;  
+    	-o-transition: 0.2s ease-in;  
+    	transition: 0.2s ease-in;
+		}     
+		h1 {
+      color: white; 
+      font-weight: 400;  
+      font-size: 3em;
+    }  
+    h2 {         
+      font-size: 1.9em;
+      font-weight: 400;  
+      font-family: Helvetica, Arial, serif;
+      color: #6D6F71;
+    }            
+    h2 a {
+      color: #666;     
+    }   
+    h1 span {     
+      color: #6D6F71;
+      font-weight: normal;
+      font-size: 0.6em !important;
+    }          
+    article {      
+      font-weight: 400;
+      width: 60%;      
+      max-width: 700px;
+      padding: 100px 0 50px 0;
+      margin: 0 auto;
+    }   
+    footer {
+      width: 60%;   
+      font-size: 1.3em;
+      color: #6D6F71;
+      max-width: 700px;
+      margin: 25px auto;
+    }    
+    footer a {
+      color: #6D6F71;  
+      text-decoration: none;
+      border-bottom: 1px solid #6D6F71;
+    }               
+    footer a:hover {    
+      color: white;
+      border-bottom: 1px solid white;
+      text-decoration: none; 
+    }
+    h1, a.aleph {
+      margin-bottom: 25px;
+    }
+    h2, ul {
+      margin-bottom: 50px;
+    }           
+    ul {
+      list-style-type: none;   
+      overflow: hidden;
+    }                 
+    ul li {
+      width: 50%;    
+      float: left;
+    }             
+    ul li a {              
+      display: block;         
+      font-size: 1.5em;
+      color: #ccc;
+      background: #36393B;
+      width: 80%;
+      height: 100%;                
+      text-align: center;
+      padding: 25px 0;
+      text-decoration: none; 
+      -moz-border-radius: 4px;
+      -khtml-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+    }  
+    ul li a:hover {
+      background: #222;
+      color: white;
+    }     
+    .aleph {
+      width: 90px;
+      height: 90px;   
+      display: block;        
+      text-indent: -9999px;
+      background: transparent url('http://codecantor.com/assets/img/codecantor.png') no-repeat;
+    }
+		</style>  
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,600,700' rel='stylesheet' type='text/css'>
+		<!-- front gruncho -->
 	</head>
 	<body>
-	<h1>Tutorial de regexes</h1>
-	<a href="slides/" alt="Diapositivas">Diapositivas</a>
-	<a href="tutorial/" alt="Tutorial">Tutorial</a>
+	<article> 
+	  <a href="http://codecantor.com" class="aleph">
+	    codecantor
+	  </a>
+	  <h1>
+	    Tutorial de <em>regexes</em>
+	    <span>
+	      (expresiones regulares)
+	    </span>
+	  </h1>        
+	  <h2>
+Una expresión regular, a menudo llamada también <em>regex</em>, es una secuencia de caracteres que forma un patrón de búsqueda, principalmente utilizada para la búsqueda de patrones de cadenas de caracteres u operaciones de sustituciones — <em>wikipedia</em> 	  </h2>
+	  <ul>
+	    <li>
+	      <a href="slides/" alt="Diapositivas">
+	        Diapositivas
+	      </a> 
+	    </li>
+	    <li>
+	      <a href="tutorial/" alt="Tutorial">
+	        Tutorial
+	      </a> 
+	    </li>
+	  </ul>
+	</article> 
+	<footer>
+	  Por Sergio Arbeo (<a hreF="http://twitter.com/serabe">@serabe</a>) de <a href="http://codecator.com">codecantor</a>, gracias a <a href="#">nombreslides</a>
 	</body>
 </html>
