@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Introducción a las expresiones regulares</title>
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
+    
+        <link rel="stylesheet" href="css/theme.css" id="theme">
+    
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css" id="highlight-theme">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+          if( window.location.search.match( /print-pdf/gi ) ) {
+            var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'bower_components/reveal.js/css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+
+                
+                    
+                        
+    <section data-markdown="slides/index.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/01-about-me.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/02-colab-cc.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/03-que-es.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/04-en-programacion.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/05-instrucciones.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/06-instrucciones.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/07-estadisticas.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/08-basico.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/09-primera-regex.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/10-primer-ejemplo.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/11-metacharacters.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/12-metacharacters.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/13-segundo-ejemplo.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/14-tercer-ejemplo.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/15-golf-01.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/16-golf-02.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/17-character-classes.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/18-cc-basics.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/19-ejemplo.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/20-advanced.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/201-rangos.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/21-ejemplo.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/22-atajos.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/2301-groups.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/2302-capturing-groups.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/2303-non-capturing-groups.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/2304-quantifiers.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/2305-greedy.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/2306-golf-03.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/2307-lazy.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/24-hablemos.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/25-regex-numero.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/26-solucion-final.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/27-email.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/28-true-email.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/29-por-si-acaso.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/30-backreferences.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/31-definicion.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/32-ejemplo.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/33-golf-04.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/34-golf-05.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/35-golf-06.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/36-golf-07.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/37-golf-08.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/38-golf-09.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/39-otros-temas.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/40-ruby.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/41-named-groups.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/42-brackets.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/43-recursos.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/44-gracias.html"></section>
+
+
+                    
+                    
+                
+            </div>
+
+        </div>
+
+        <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+        <script src="bower_components/reveal.js/js/reveal.min.js"></script>
+        <script>
+            // Configure Reveal
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                fragments: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    // { src: 'bower_components/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    //{ src: 'bower_components/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+
+                    { src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } }
+                ]
+            });
+        </script>
+
+    </body>
+
+</html>
